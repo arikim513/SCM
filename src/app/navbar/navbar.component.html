@@ -1,0 +1,13 @@
+<nav class="navbar navbar-toggleable fixed-top scm-navbar">
+    <a class="navbar-brand text-white" routerLink="">{{appTitle}}</a>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="nav-bar">
+        <button class="btn btn-warning mr-2" routerLink="/product-list/product/0">
+            <i class="fa fa-plus">商品登録</i>
+        </button>
+        <form class="form-inline">
+            <input class="form-control mr-2" type="text" placeholder="商品番号" #searchInput>
+            <button class="btn btn-warning" type="button"
+                (click)="searchProduct(searchInput.value)">商品検索</button>
+        </form>
+    </div>
+</nav>
