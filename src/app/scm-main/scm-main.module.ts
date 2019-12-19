@@ -6,6 +6,8 @@ import { FooterComponent } from '../footer/footer.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { CategoryRoutingModule } from '../category/category-routing.module';
+import { ProductRoutingModule } from '../product/product-routing.module';
 
 const CORE_COMPONENTS = [
   NavbarComponent,
@@ -19,7 +21,7 @@ const CORE_COMPONENTS = [
   declarations: CORE_COMPONENTS,
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   exports: CORE_COMPONENTS
 })
