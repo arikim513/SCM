@@ -10,6 +10,8 @@ import { ProductModule } from './product/product.module';
 import { CategoryModule } from './category/category.module';
 import { ScmMainModule } from './scm-main/scm-main.module';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { SharedModeule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,/*いつも最後にインポート*/
     /*3d module*/
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    SharedModeule
   ],
   providers: [],
   bootstrap: [AppComponent]
